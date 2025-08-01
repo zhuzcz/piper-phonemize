@@ -41,7 +41,7 @@ struct eSpeakPhonemeConfig {
   Phoneme space = U' ';
 
   // Remove language switch flags like "(en)"
-  bool keepLanguageFlags = false;
+  bool keepLanguageFlags = true;
 
   std::shared_ptr<PhonemeMap> phonemeMap;
 };
