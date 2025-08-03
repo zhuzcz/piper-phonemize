@@ -33,7 +33,7 @@ def phonemize_espeak(
     data_path: Optional[Union[str, Path]] = None,
 ) -> List[List[str]]:
     if data_path is None:
-        data_path = _DIR / "espeak-ng-data"
+        data_path = _DIR / "share" / "espeak-ng-data"
 
     return _phonemize_espeak(text, voice, str(data_path))
 
